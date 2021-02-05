@@ -14,20 +14,11 @@ jobs:
             {
               "blocks": [
                 {
-                  "type": "header",
+                  "type": "section",
                   "text": {
-                    "type": "plain_text",
-                    "text": ":rocket: circleci-slack start deploying to QA"
+                    "type": "mrkdwn",
+                    "text": "@here *circleci-slack* start deploying to QA"
                   }
-                },
-                {
-                  "type": "context",
-                  "elements": [
-                    {
-                      "type": "mrkdwn",
-                      "text": "@here"
-                    }
-                  ]
                 }
               ]
             }
