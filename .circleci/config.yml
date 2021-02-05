@@ -9,7 +9,6 @@ jobs:
       - slack/notify:
           branch_pattern: main|^hotfix\/.+$
           channel: test
-          mentions: '@here'
           event: always
           custom: |
             {
