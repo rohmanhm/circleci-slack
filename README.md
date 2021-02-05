@@ -1,2 +1,2 @@
 # circleci-slack
-Test Circle CI Slack Notification
+Test Circle CI Slack Notification.
