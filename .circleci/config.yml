@@ -7,22 +7,23 @@ jobs:
       - image: 'cimg/base:stable'
     steps:
       - slack/notify:
+          branch_pattern: main|^hotfix\/.+$
+          channel: test
+          mentions: @here
+          event: always
           custom: |
             {
               "blocks": [
                 {
-                  "type": "section",
-                  "fields": [
-                    {
-                      "type": "plain_text",
-                      "text": "*This is a text notification*",
-                      "emoji": true
-                    }
-                  ]
+                  "type": "header",
+                  "text": {
+                    "type": "plain_text",
+                    "text": ":rocket: circleci-slack start deploying to QA"
+                  }
                 }
               ]
             }
-          event: always
+
 workflows:
   send-notification:
     jobs:
