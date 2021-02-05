@@ -20,6 +20,15 @@ jobs:
                     "type": "plain_text",
                     "text": ":rocket: circleci-slack start deploying to QA"
                   }
+                },
+                {
+                  "type": "context",
+                  "elements": [
+                    {
+                      "type": "mrkdwn",
+                      "text": "@here"
+                    }
+                  ]
                 }
               ]
             }
